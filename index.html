@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>너무 자유로운 자유의 여신상 </title>
+	<style>
+	</style>
+</head>
+<body>
+
+<h1>너무 자유로운 자유의 여신상</h1>
+<div>
+
+
+
+<div style="position: absolute;">
+
+<div style="position: relative;   left:250px; top:80px; "><img id="bbang" src=""  height="400" weight="400" onclick="change()"></img>
+
+</div>
+
+</div>
+
+
+<div style="position: absolute;">
+
+<div style="position: relative; left:250px; top: 500px;"><a id='text'></a>
+
+</div>
+</div>
+
+
+
+<div style="position: absolute;">
+
+<div style="position: relative;"><img id="desf" height="558" weight="1000" src=""></img>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+	<script>
+document.getElementById("bbang").src = "bread.jpg";
+
+
+function change(){
+	setTimeout("sticker()",2000);
+	document.getElementById("desf").src = "desfort.gif";
+	
+}
+function sticker(){
+
+	var s = Math.floor(Math.random() * 11 )+1;
+	if(s==1)
+		document.getElementById("text").innerText = "명함 교환중인 자유의 여신상";
+	else if(s==2)
+		document.getElementById("text").innerText = "랩하는 자유의 여신상";
+	else if(s==3)
+		document.getElementById("text").innerText = "차 한잔의 여유 자유의 여신상";
+	else if(s==4)
+		document.getElementById("text").innerText = "맥주 홍보하는 자유의 여신상";
+	else if(s==5)
+		document.getElementById("text").innerText = "절하는 자유의 여신상";
+	else if(s==6)
+		document.getElementById("text").innerText = "요가하는 자유의 여신상";
+	else if(s==7)
+		document.getElementById("text").innerText = "누워서 책읽는 자유의 여신상";
+	else if(s==8)
+		document.getElementById("text").innerText = "매혹적인 자유의 여신상";
+	else if(s==9)
+		document.getElementById("text").innerText = "겨땀 케어중인 자유의 여신상";
+	else if(s==10)
+		document.getElementById("text").innerText = "부끄러운 자유의 여신상";
+	else if(s==11)
+		document.getElementById("text").innerText = "옷을 뒤집어쓴 자유의 여신상";
+	
+
+   
+	var k = "img/"+s+".jpg";
+	document.getElementById("bbang").src = k;
+}
+
+
+	</script>
+</body>
+</html>
